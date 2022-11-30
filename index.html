@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Alex Munson's Portfolio">
+		<meta name="keywords" content="Alex Munson, Dartmouth College">
+    <link rel="stylesheet" href="assets/styles.css">
+  	<link rel="icon" href="assets/pixel_art/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
+		<title>Alex Munson</title>
+	</head>
+	<body>
+    <div class="background">
+      <img id="base" src="assets/pixel_art/base.png" />     
+      <img id="green-btn" class="btn" src="assets/pixel_art/cropped/green-btn.png" />
+      <img id="orange-btn" class="btn" src="assets/pixel_art/cropped/orange-btn.png" />
+      <img id="yellow-btn" class="btn" src="assets/pixel_art/cropped/yellow-btn.png" />
+      <img id="purple-btn" class="btn" src="assets/pixel_art/cropped/purple-btn.png" />
+
+      <div id="about-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>About Me</h1>
+          <p>
+            I'm a California native and a student in the class of 2024 at Dartmouth College, 
+            working on a BA in Japanese with a minor in Digital Art. I worked as a Game Design 
+            Intern at Resonym/Tilt Factor in New Hampshire last summer and am currently developing 
+            my skills with Dartmouth's offerings in digital and game design. Most recently, I 
+            completed an 
+            <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-22" target="_blank">
+              introductory course
+            </a> 
+            in Maya and I am currently enrolled in a 
+            <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-23-01" target="_blank">
+              continuation of this course
+            </a> 
+            organized around level design in AR/VR games developed in Unity. 
+          </p>
+          <p>
+            In my free time, I enjoy baking, watching soccer, reading history, traveling, and 
+            playing games (especially Pokemon, Dark Souls, and Minecraft). Game design, 
+            particularly level and content design, is a favorite hobby of mine and one I have 
+            been pursuing since I started running D&D games for my friends and siblings in middle 
+            school. In my work I seek to instill a sense of warmth and wonder while remaining 
+            honest to the topic I want to address. 
+          </p>
+        </div>
+      </div>
+  
+      <div id="maya-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>MAYA</h1>
+          <p>
+            In Fall 2022, I completed a course in introductory 3D-modeling at Dartmouth College. 
+            This course covered hard surface as well as basic organic modeling, Adobe Substance 
+            Painter, lighting, rendering, and animation. For each of these projects I worked 
+            from concept images through multiple re-renders. All modeling, lighting, and UV 
+            mapping was performed by me.
+          </p>
+        </div>
+      </div>
+  
+      <div id="bannerlord-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>WorldMachine/Bannerlord</h1>
+          <p>
+            Mount and Blade: Warband is one of my most played games on Steam, 
+            and much of this playtime is thanks to the wonderful work of the 
+            modding community. When Mount and Blade II: Bannerlord came out in 
+            early access, I realized it would be a good opportunity to develop 
+            my own skills as a scene designer. I taught myself the node-based 
+            terrain generation software WorldMachine, which I used to design a 
+            map with an emphasis on natural realism and a balance between open 
+            and tight spaces in which battles could take place.
+          </p>
+          <p>
+            For my River Valley map, I used reference images of Malibu Creek 
+            State Park by my home in California and drew out the simple geometry 
+            of the mountains and river using shape nodes. I applied perlin and 
+            voronoi noises to these features to create rough surfaces before 
+            applying a ground level and river course. I then used multiple layers 
+            of erosion to carve out the river banks and create natural looking 
+            slopes for the mountains and valley. 
+          </p>
+          <p>
+            I exported heightmap layers that I used to generate terrain in the 
+            Bannerlord Level Editor, where I used more heightmaps to paint 
+            terrain efficiently and quickly. I then went through the map and 
+            painted foliage by hand while incorporating structures, smoothing 
+            terrain, and building an immersive map boundary. Finally, I painted 
+            a Navigation Mesh for the CPU soldiers to follow, playing close 
+            attention to the two river crossings that I knew would be key 
+            features of players' tactics.
+          </p>
+        </div>
+      </div>
+  
+      <div id="rpg-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>RPGMakerMV</h1>
+          <p>
+            “<a href="https://lockalook.itch.io/caged-beasts-browser-version" target="_blank">
+              Caged Beasts
+            </a>” started as an itch.io October RPGMaker Game Jam that I 
+            undertook with a friend and fellow Dartmouth student. We divided the 
+            work between us with my teammate writing the story, me designing the 
+            maps and incorporating everything into RPGMakerMV, and both of us 
+            collaborating on the chase scenes and puzzles. Of the content, I 
+            designed the hedge garden chase scene, the werewolf chase scene, and 
+            the mechanical component puzzle on the first floor. I also sourced 
+            plug-ins, sprites and other assets, chose music and sound effects, 
+            and animated cutscenes according to my teammate's dialogue and blocking. 
+            I have since continued to update/patch the game, including introducing 
+            a browser-playable version.
+          </p>
+          <p>
+            I made “
+            <a href="https://lockalook.itch.io/a-heike-tale" target="_blank">
+              Heike Tale
+            </a>
+            ” in RPGMakerMV as my final demo for the 
+            <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Film-and-Media-Studies/FILM-Film-and-Media-Studies/FILM-51" target="_blank">
+              Game Design Studio
+            </a> 
+            course I completed in Spring 2022. This RPG was my attempt at 
+            making an immersive and historically honest portrayal of the Medieval 
+            Japanese epic Tale of the Heike. The demo contains a single dungeon 
+            based on a few starting chapters, and showcases puzzles, combat, 
+            cutscenes, and period architecture and sprites.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="assets/scripts.js"></script>
+	</body>
+</html>
