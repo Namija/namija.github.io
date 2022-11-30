@@ -10,12 +10,19 @@ body {
 .background {
   background-color: #000;
   height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
 #base {
-  position: relative;
+  position: absolute;
+  margin: auto;
   height: 100%;
   width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .btn {
@@ -45,6 +52,35 @@ body {
 #purple-btn {
   left: 154vh;
   top: 85vh;
+}
+
+/* when the screen is wider than the bg image's width */
+@media (min-width: 177.5vh) and (orientation:landscape) {
+  .btn {
+    margin: auto;
+    right: 0;
+    bottom: 0;
+  }
+
+  #green-btn {
+    left: -68.5vh;
+    top: 88vh;
+  }
+  
+  #orange-btn {
+    left: -65.5vh;
+    top: 8vh;
+  }
+  
+  #yellow-btn {
+    left: 91.5vh;
+    top: 19vh;
+  }
+  
+  #purple-btn {
+    left: 136vh;
+    top: 75vh;
+  }
 }
 
 .modal {
