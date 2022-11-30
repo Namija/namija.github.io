@@ -1,10 +1,33 @@
 body {
-  overflow-x: scroll;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: auto;
   overflow-y: hidden;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-size: 2.5vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 4vh;
+}
+
+h2 {
+  font-size: 3vh;
+}
+
+a {
+  color: #801c3d !important;
+}
+
+a:hover {
+	color: #9f3458 !important;
 }
 
 .background {
@@ -55,7 +78,7 @@ body {
 }
 
 /* when the screen is wider than the bg image's width */
-@media (min-width: 177.5vh) and (orientation:landscape) {
+@media (min-width: 177.5vh) and (orientation: landscape) {
   .btn {
     margin: auto;
     right: 0;
@@ -83,41 +106,169 @@ body {
   }
 }
 
+.menu-wrapper {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+}
+
+.menu-wrapper * {
+  position: absolute;
+}
+
+#menu {
+  height: 50vh;
+  top: 44vh;
+  left: 1vh;
+}
+
+.menu-title {
+  height: 40vh;
+  top: 50vh;
+  left: 16.5vh;
+}
+
+.menu-directions {
+  height: 40vh;
+  width: 24vh;
+  top: 57vh;
+  left: 12vh;
+}
+
+.menu-resume {
+  height: 40vh;
+  top: 75vh;
+  left: 16vh;
+}
+
+.menu-linkedin {
+  height: 40vh;
+  top: 81vh;
+  left: 13vh;
+}
+
+/* when the screen is wider than the bg image's width */
+@media (min-width: 177.5vh) and (orientation: landscape) {
+  .menu-wrapper * {
+    margin: auto;
+    right: 0;
+    bottom: 0;
+  }
+
+  #menu {
+    top: 69vh;
+    left: -130vh;
+  }
+
+  .menu-title {
+    top: 72.5vh;
+    left: -129vh;
+  }
+
+  .menu-directions {
+    top: 79vh;
+    left: -130vh;
+  }
+  
+  .menu-resume {
+    top: 97.4vh;
+    left: -128vh;
+  }
+  
+  .menu-linkedin {
+    top: 103.5vh;
+    left: -128.5vh;
+  }
+}
+
+.scroll-wrapper {
+  position: absolute;
+  height: 50vh;
+}
+
+.scroll {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .modal {
   display: none; 
   justify-content: center;
+  align-items: center;
   position: fixed; 
   z-index: 100; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: hidden; 
+  min-width: 121vh;
+  overflow-x: auto; 
+  overflow-y: hidden;
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
 }
 
+.modal-wrapper {
+  height: 90vh;
+  min-width: 130vh;
+  overflow: hidden;
+}
+
+.modal-scroll {
+  height: 100%;
+  width: 120vh;
+}
+
 .modal-content {
-  background-color: #fefefe;
-  margin: 10% auto; 
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%; 
-  max-height: 60%;
-  overflow-y: scroll;
+  position: absolute;
+  margin: auto;
+  top: 16vh;
+  left: -8.2vh;
+  bottom: 0vh;
+  right: 0vh;
+  width: 60vh;
+  text-align: center;
+  overflow-y: auto;
   overflow-x: hidden;
+  text-overflow: clip;
+  word-wrap: break-word;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #2e1c0e;
+  border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #352110;
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  color: #000000;
+  font-size: 32px;
   font-weight: bold;
+  position: absolute;
+  margin: auto;
+  top: -72vh;
+  left: 0;
+  bottom: 0;
+  right: -81vh;
+  height: 4vh;
+  width: 4vh;
+  z-index: 20;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #1e1207;
   text-decoration: none;
   cursor: pointer;
 }
