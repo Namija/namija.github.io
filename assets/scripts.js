@@ -114,3 +114,23 @@ function showSlides(n, modal_name) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// fullscreen imgs on click
+const imgs = document.querySelectorAll('.modal-img, .modal-img-wide');
+const fullPage = document.querySelector('#fullPage');
+const closeBtn = document.querySelector('#closeBtn');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+    closeBtn.style.display = 'block';
+    document.body.style.overflowX = 'hidden';
+  });
+});
+
+function minimizeImg() {
+  fullPage.style.display = 'none';
+  closeBtn.style.display = 'none';
+  document.body.style.overflowX = 'auto';
+}
