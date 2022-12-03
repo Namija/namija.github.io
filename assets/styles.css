@@ -171,7 +171,8 @@ video {
 }
 
 .menu-directions {
-  font-size: 2vh;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.8vh;
   margin-top: 0;
   margin-bottom: 3vh;
 }
