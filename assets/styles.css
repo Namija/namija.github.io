@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 5vh;
   font-size: 4vh;
 }
 
@@ -28,6 +28,38 @@ a {
 
 a:hover {
 	color: #9f3458 !important;
+}
+
+video {
+  border-radius: 10px;
+}
+
+.mb {
+  margin-bottom: 3vh;
+}
+
+.mt {
+  margin-top: 10vh !important;
+}
+
+.left-align {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.right-align {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.half {
+  max-width: 45% !important;
+  margin: 2.5%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 .background {
@@ -112,39 +144,40 @@ a:hover {
   height: 50vh;
 }
 
-.menu-wrapper * {
+#menu, 
+.menu-content {
   position: absolute;
-}
-
-#menu {
   height: 50vh;
   top: 44vh;
   left: 1vh;
 }
 
-.menu-title {
-  height: 40vh;
-  top: 50vh;
-  left: 16.5vh;
-}
-
-.menu-directions {
-  height: 40vh;
-  width: 24vh;
-  top: 57vh;
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25vh;
   left: 12vh;
 }
 
-.menu-resume {
-  height: 40vh;
-  top: 75vh;
-  left: 16vh;
+.menu-content h1, 
+.menu-content h2 {
+  font-size: 2.5vh;
 }
 
-.menu-linkedin {
-  height: 40vh;
-  top: 81vh;
-  left: 13vh;
+.menu-title {
+  margin-bottom: 2vh;
+}
+
+.menu-directions {
+  font-size: 2vh;
+  margin-top: 0;
+  margin-bottom: 3vh;
+}
+
+.menu-link {
+  margin-bottom: 0vh;
 }
 
 /* when the screen is wider than the bg image's width */
@@ -155,29 +188,14 @@ a:hover {
     bottom: 0;
   }
 
-  #menu {
+  #menu, 
+  .menu-content {
     top: 69vh;
     left: -130vh;
   }
 
-  .menu-title {
-    top: 72.5vh;
-    left: -129vh;
-  }
-
-  .menu-directions {
-    top: 79vh;
-    left: -130vh;
-  }
-  
-  .menu-resume {
-    top: 97.4vh;
-    left: -128vh;
-  }
-  
-  .menu-linkedin {
-    top: 103.5vh;
-    left: -128.5vh;
+  .menu-content {
+    height: 35vh;
   }
 }
 
@@ -232,6 +250,14 @@ a:hover {
   overflow-x: hidden;
   text-overflow: clip;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-img {
+  max-width: 80%;
+  border-radius: 10px;
 }
 
 .modal-content::-webkit-scrollbar {
@@ -262,7 +288,7 @@ a:hover {
   bottom: 0;
   right: -81vh;
   height: 4vh;
-  width: 4vh;
+  width: 0vh;
   z-index: 20;
 }
 
@@ -271,4 +297,102 @@ a:hover {
   color: #1e1207;
   text-decoration: none;
   cursor: pointer;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide-maya, 
+.slide-bl {
+  display: none;
+}
+
+.slide-img {
+  height: 30vh;
+  width: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide-count {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slideshow-dots {
+  text-align: center;
+}
+
+.dot-maya, 
+.dot-bl, 
+.dot-rpg {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-maya:hover, 
+.dot-bl:hover, 
+.dot-rpg:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

@@ -30,6 +30,8 @@ $("#green-btn").on("click", function(event) {
 $("#orange-btn").on("click", function(event) {
   modal = document.getElementById("maya-modal");
   modal.style.display = "flex";
+  let slideIndex = 1;
+  showSlides(slideIndex, "maya");
 
   // if you can scroll in the modal, adjust the styles to accommodate a scrollbar
   if (modal.scrollHeight <= modal.clientHeight) {
@@ -48,6 +50,8 @@ $("#orange-btn").on("click", function(event) {
 $("#yellow-btn").on("click", function(event) {
   modal = document.getElementById("bannerlord-modal");
   modal.style.display = "flex";
+  let slideIndex = 1;
+  showSlides(slideIndex, "bl");
 
   // if you can scroll in the modal, adjust the styles to accommodate a scrollbar
   if (modal.scrollHeight <= modal.clientHeight) {
@@ -66,6 +70,8 @@ $("#yellow-btn").on("click", function(event) {
 $("#purple-btn").on("click", function(event) {
   modal = document.getElementById("rpg-modal");
   modal.style.display = "flex";
+  let slideIndex = 1;
+  showSlides(slideIndex, "rpg");
   
   // if you can scroll in the modal, adjust the styles to accommodate a scrollbar
   if (modal.scrollHeight <= modal.clientHeight) {
@@ -80,3 +86,31 @@ $("#purple-btn").on("click", function(event) {
     $("#rpg-modal .modal-content").css("padding-right", "15vh");
   }
 });
+
+
+// modal slideshow js
+let slideIndex = 1;
+
+function plusSlides(n, modal_name) {
+  showSlides(slideIndex += n, modal_name);
+}
+
+function currentSlide(n, modal_name) {
+  showSlides(slideIndex = n, modal_name);
+}
+
+function showSlides(n, modal_name) {
+  let i;
+  let slides = document.getElementsByClassName("slide-" + modal_name);
+  let dots = document.getElementsByClassName("dot-" + modal_name);
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
