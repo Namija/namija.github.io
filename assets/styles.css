@@ -30,8 +30,9 @@ a:hover {
 	color: #9f3458 !important;
 }
 
-video {
+iframe {
   border-radius: 10px;
+  width: 100%;
 }
 
 .mb {
