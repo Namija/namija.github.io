@@ -101,12 +101,33 @@ iframe {
 
 .base-btn {
   position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-animation: fadeInOut 6s linear forwards;
+  height: 5.8vh;
+  width: 5.65vh;
+  left: -0.07vh;
+  top: -0.2vh;
+  -webkit-animation: fadeInOut 4s linear forwards;
   -webkit-animation-iteration-count: infinite;
-  animation: fadeInOut 6s linear forwards;
+  animation: fadeInOut 4s linear forwards;
   animation-iteration-count: infinite;
+}
+
+#green-base-btn {
+  height: 5.7vh;
+  top: -0.1vh;
+}
+
+#brown-base-btn {
+  height: 6vh;
+  width: 6.1vh;
+  left: -0.3vh;
+  top: -0.22vh;
+}
+
+#purple-base-btn {
+  height: 6.1vh;
+  width: 5.8vh;
+  left: -0.2vh;
+  top: -0.22vh;
 }
 
 @-webkit-keyframes fadeInOut {
@@ -129,7 +150,7 @@ iframe {
   top: 51vh;
 }
 
-#yellow-btn-wrapper {
+#brown-btn-wrapper {
   left: 131.5vh;
   top: 56vh;
 }
@@ -157,7 +178,7 @@ iframe {
     top: 8vh;
   }
   
-  #yellow-btn-wrapper {
+  #brown-btn-wrapper {
     left: 91.5vh;
     top: 19vh;
   }
