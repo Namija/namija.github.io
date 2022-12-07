@@ -47,7 +47,7 @@ $("#orange-btn-wrapper").on("click", function(event) {
   }
 });
 
-$("#yellow-btn-wrapper").on("click", function(event) {
+$("#brown-btn-wrapper").on("click", function(event) {
   modal = document.getElementById("bannerlord-modal");
   modal.style.display = "flex";
   let slideIndex = 1;
