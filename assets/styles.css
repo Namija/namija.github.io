@@ -194,7 +194,9 @@ iframe {
   align-items: center;
   justify-content: center;
   width: 25vh;
-  left: 12vh;
+  height: 40.5vh;
+  top: 48.5vh;
+  left: 14vh;
 }
 
 .menu-content h1, 
@@ -228,11 +230,12 @@ iframe {
   #menu, 
   .menu-content {
     top: 69vh;
-    left: -130vh;
+    left: -129vh;
   }
 
   .menu-content {
     height: 35vh;
+    left: -127vh;
   }
 }
 
@@ -274,6 +277,20 @@ iframe {
   width: 120vh;
 }
 
+.shadow {
+  position: absolute;
+  margin: auto;
+  top: -71vh;
+  left: -8.8vh;
+  bottom: 0vh;
+  right: 0vh;
+  height: 3vh;
+  width: 83vh;
+  text-align: center;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
 .modal-content {
   position: absolute;
   margin: auto;
@@ -308,16 +325,16 @@ iframe {
 }
 
 .modal-content::-webkit-scrollbar {
-  width: 10px;
+  width: 2vh;
 }
 
 .modal-content::-webkit-scrollbar-track {
-  border-radius: 5px;
+  border-radius: 1vh;
 }
 
 .modal-content::-webkit-scrollbar-thumb {
   background: #2e1c0e;
-  border-radius: 5px;
+  border-radius: 1vh;
 }
 
 .modal-content::-webkit-scrollbar-thumb:hover {
@@ -326,7 +343,7 @@ iframe {
 
 .close {
   color: #000000;
-  font-size: 32px;
+  font-size: 6vh;
   font-weight: bold;
   position: absolute;
   margin: auto;
