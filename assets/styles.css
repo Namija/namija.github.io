@@ -91,29 +91,50 @@ iframe {
 
 .btn {
   position: absolute;
-  height: 6vh;
+  height: 5.5vh;
+  width: 5.5vh;
 }
 
 .btn:hover {
   cursor: pointer;
 }
 
-#green-btn {
+.base-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: fadeInOut 6s linear forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation: fadeInOut 6s linear forwards;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fadeInOut {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeInOut {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+#green-btn-wrapper {
   left: 51.5vh;
   top: 91vh;
 }
 
-#orange-btn {
+#orange-btn-wrapper {
   left: 52.5vh;
   top: 51vh;
 }
 
-#yellow-btn {
+#yellow-btn-wrapper {
   left: 131.5vh;
   top: 56vh;
 }
 
-#purple-btn {
+#purple-btn-wrapper {
   left: 154vh;
   top: 85vh;
 }
@@ -126,22 +147,22 @@ iframe {
     bottom: 0;
   }
 
-  #green-btn {
+  #green-btn-wrapper {
     left: -68.5vh;
     top: 88vh;
   }
   
-  #orange-btn {
+  #orange-btn-wrapper {
     left: -65.5vh;
     top: 8vh;
   }
   
-  #yellow-btn {
+  #yellow-btn-wrapper {
     left: 91.5vh;
     top: 19vh;
   }
   
-  #purple-btn {
+  #purple-btn-wrapper {
     left: 136vh;
     top: 75vh;
   }
