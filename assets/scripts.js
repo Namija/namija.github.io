@@ -9,7 +9,7 @@ window.onclick = function(event) {
   }
 }
 
-$("#green-btn").on("click", function(event) {
+$("#green-btn-wrapper").on("click", function(event) {
   modal = document.getElementById("about-modal");
   modal.style.display = "flex";
 
@@ -27,7 +27,7 @@ $("#green-btn").on("click", function(event) {
   }
 });
 
-$("#orange-btn").on("click", function(event) {
+$("#orange-btn-wrapper").on("click", function(event) {
   modal = document.getElementById("maya-modal");
   modal.style.display = "flex";
   let slideIndex = 1;
@@ -47,7 +47,7 @@ $("#orange-btn").on("click", function(event) {
   }
 });
 
-$("#yellow-btn").on("click", function(event) {
+$("#yellow-btn-wrapper").on("click", function(event) {
   modal = document.getElementById("bannerlord-modal");
   modal.style.display = "flex";
   let slideIndex = 1;
@@ -67,7 +67,7 @@ $("#yellow-btn").on("click", function(event) {
   }
 });
 
-$("#purple-btn").on("click", function(event) {
+$("#purple-btn-wrapper").on("click", function(event) {
   modal = document.getElementById("rpg-modal");
   modal.style.display = "flex";
   let slideIndex = 1;
