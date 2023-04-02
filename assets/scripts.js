@@ -9,7 +9,7 @@ window.onclick = function(event) {
   }
 }
 
-$("#green-btn-wrapper").on("click", function(event) {
+$("#about-me").on("click", function(event) {
   modal = document.getElementById("about-modal");
   modal.style.display = "flex";
 
@@ -24,6 +24,26 @@ $("#green-btn-wrapper").on("click", function(event) {
     $("#about-modal .modal-content").css("padding-top", "10vh");
     $("#about-modal .modal-content").css("padding-bottom", "10vh");
     $("#about-modal .modal-content").css("padding-right", "9vh");
+  }
+});
+
+$("#green-btn-wrapper").on("click", function(event) {
+  modal = document.getElementById("unity-modal");
+  modal.style.display = "flex";
+  let slideIndex = 1;
+  showSlides(slideIndex, "unity");
+
+  // if you can scroll in the modal, adjust the styles to accommodate a scrollbar
+  if (modal.scrollHeight >= modal.clientHeight) {
+    $("#unity-modal .close").css("right", "-59vh");
+
+    $("#unity-modal .modal-content").css("top", "-1vh");
+    $("#unity-modal .modal-content").css("left", "5vh");
+    $("#unity-modal .modal-content").css("height", "53vh");
+    $("#unity-modal .modal-content").css("width", "60vh");
+    $("#unity-modal .modal-content").css("padding-top", "10vh");
+    $("#unity-modal .modal-content").css("padding-bottom", "10vh");
+    $("#unity-modal .modal-content").css("padding-right", "9vh");
   }
 });
 

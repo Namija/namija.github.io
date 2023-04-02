@@ -33,12 +33,12 @@ a:hover {
 iframe {
   border-radius: 10px;
   width: 100%;
-  height: 120%;
+  /* height: 120%; */
   display: block;
 }
 
 .iframe-container {
-  max-height: 30vh;
+  /* max-height: 30vh; */
   width: 100%;
   display: table-cell;
 }
@@ -201,7 +201,7 @@ iframe {
 
 .menu-content h1, 
 .menu-content h2 {
-  font-size: 2.5vh;
+  font-size: 2.2vh;
 }
 
 .menu-title {
@@ -212,12 +212,22 @@ iframe {
   font-family: 'Press Start 2P', cursive;
   font-size: 1.8vh;
   margin-top: 0;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 
 .menu-link {
   margin-bottom: 0vh;
 }
+
+#about-me {
+  text-decoration: underline;
+  color: #801c3d !important;
+}
+
+#about-me:hover {
+  color: #9f3458 !important;
+  cursor: pointer;
+};
 
 /* when the screen is wider than the bg image's width */
 @media (min-width: 177.5vh) and (orientation: landscape) {
@@ -375,6 +385,7 @@ iframe {
   height: 100% !important;
 }
 
+.slide-unity, 
 .slide-maya, 
 .slide-bl,
 .slide-rpg {
@@ -438,6 +449,7 @@ iframe {
   text-align: center;
 }
 
+.dot-unity, 
 .dot-maya, 
 .dot-bl, 
 .dot-rpg {
@@ -452,6 +464,7 @@ iframe {
 }
 
 .active,
+.dot-unity:hover, 
 .dot-maya:hover, 
 .dot-bl:hover, 
 .dot-rpg:hover {
