@@ -19,7 +19,7 @@ $("#about-me").on("click", function(event) {
 
     $("#about-modal .modal-content").css("top", "-1vh");
     $("#about-modal .modal-content").css("left", "5vh");
-    $("#about-modal .modal-content").css("height", "53vh");
+    $("#about-modal .modal-content").css("height", "55vh");
     $("#about-modal .modal-content").css("width", "60vh");
     $("#about-modal .modal-content").css("padding-top", "10vh");
     $("#about-modal .modal-content").css("padding-bottom", "10vh");
@@ -39,7 +39,7 @@ $("#green-btn-wrapper").on("click", function(event) {
 
     $("#unity-modal .modal-content").css("top", "-1vh");
     $("#unity-modal .modal-content").css("left", "5vh");
-    $("#unity-modal .modal-content").css("height", "53vh");
+    $("#unity-modal .modal-content").css("height", "55vh");
     $("#unity-modal .modal-content").css("width", "60vh");
     $("#unity-modal .modal-content").css("padding-top", "10vh");
     $("#unity-modal .modal-content").css("padding-bottom", "10vh");
@@ -59,7 +59,7 @@ $("#orange-btn-wrapper").on("click", function(event) {
 
     $("#maya-modal .modal-content").css("top", "-1vh");
     $("#maya-modal .modal-content").css("left", "5vh");
-    $("#maya-modal .modal-content").css("height", "53vh");
+    $("#maya-modal .modal-content").css("height", "55vh");
     $("#maya-modal .modal-content").css("width", "60vh");
     $("#maya-modal .modal-content").css("padding-top", "10vh");
     $("#maya-modal .modal-content").css("padding-bottom", "10vh");
@@ -79,7 +79,7 @@ $("#brown-btn-wrapper").on("click", function(event) {
 
     $("#bannerlord-modal .modal-content").css("top", "-1vh");
     $("#bannerlord-modal .modal-content").css("left", "5vh");
-    $("#bannerlord-modal .modal-content").css("height", "53vh");
+    $("#bannerlord-modal .modal-content").css("height", "55vh");
     $("#bannerlord-modal .modal-content").css("width", "60vh");
     $("#bannerlord-modal .modal-content").css("padding-top", "10vh");
     $("#bannerlord-modal .modal-content").css("padding-bottom", "10vh");
@@ -99,7 +99,7 @@ $("#purple-btn-wrapper").on("click", function(event) {
 
     $("#rpg-modal .modal-content").css("top", "-1vh");
     $("#rpg-modal .modal-content").css("left", "5vh");
-    $("#rpg-modal .modal-content").css("height", "53vh");
+    $("#rpg-modal .modal-content").css("height", "55vh");
     $("#rpg-modal .modal-content").css("width", "60vh");
     $("#rpg-modal .modal-content").css("padding-top", "10vh");
     $("#rpg-modal .modal-content").css("padding-bottom", "10vh");

@@ -1,407 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Alex Munson's Portfolio">
-		<meta name="keywords" content="Alex Munson, Dartmouth College">
-    <link rel="stylesheet" href="assets/styles.css">
-  	<link rel="icon" href="assets/pixel_art/logo.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alex Munson's Portfolio">
+  <meta name="keywords" content="Alex Munson, Dartmouth College">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" href="assets/pixel_art/logo.png">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
-		<title>Alex Munson's Portfolio Website</title>
-	</head>
-	<body>
-    <main>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap"
+    rel="stylesheet">
 
-      <div class="background">
-        <img id="base" src="assets/pixel_art/base.png" alt="Pixel art background with mountains, forest, and river" />  
-        <div class="menu-wrapper">
-          <img id="menu" class="scroll" src="assets/pixel_art/scroll.png" alt="Pixel art scroll used for menu background" />
-          <div class="menu-content">
-            <h1 class="menu-title">Alex Munson's Portfolio Website</h1>
-            <p class="menu-directions">Welcome! Use the colored buttons on the map to navigate my work.</p>
-            <a href="assets/resume.pdf" target="_blank">
-              <h2 class="menu-link">RESUME</h2>
-            </a>
-            <a href="https://www.artstation.com/namija" target="_blank">
-              <h2 class="menu-link">ARTSTATION</h2>
-            </a>
-            <h2 id="about-me" class="menu-link">ABOUT ME</h2>
-          </div>
-        </div>
-        
-        <div id="green-btn-wrapper" class="btn">
-          <img id="green-btn" class="btn" src="assets/pixel_art/cropped/green-btn.png" alt="Green button for Maya section" />
-          <img id="green-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/green-middle.png" alt="Portion of green button that flashes" />
-          <h2 class="btn-label-left">Unity</h2>
-        </div>
-        <div id="orange-btn-wrapper" class="btn">
-          <img id="orange-btn" class="btn" src="assets/pixel_art/cropped/orange-btn.png" alt="Orange button for Maya section" />
-          <img id="orange-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/orange-middle.png" alt="Portion of orange button that flashes" />
-          <h2 class="btn-label-left">Maya</h2>
-        </div>
-        <div id="brown-btn-wrapper" class="btn">
-          <img id="brown-btn" class="btn" src="assets/pixel_art/cropped/brown-btn.png" alt="Brown button for Maya section" />
-          <img id="brown-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/brown-middle.png" alt="Portion of brown button that flashes" />
-          <h2 class="btn-label-top">WorldMachine/<br/>Bannerlord</h2>
-        </div>
-        <div id="purple-btn-wrapper" class="btn">
-          <img id="purple-btn" class="btn" src="assets/pixel_art/cropped/purple-btn.png" alt="Purple button for Maya section" />
-          <img id="purple-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/purple-middle.png" alt="Portion of purple button that flashes" />
-          <h2 class="btn-label-bottom">RPGMaker MV</h2>
-        </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/4266217451.js" crossorigin="anonymous"></script>
+  <title>Alex Munson's Portfolio Website</title>
+</head>
 
-        <div id="about-modal" class="modal">
-          <div class="modal-wrapper">
-            <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png" alt="Pixel art scroll for model background" />
-            <span class="close">&times;</span>
-            <div class="shadow"></div>
-            <div class="modal-content">
-              <h1>About Me</h1>
-              <img class="modal-img" src="assets/media/id.JPEG" alt="Photograph of Alexander Munson" />
-              <p>
-                I'm a California native and a student in the class of 2024 at Dartmouth College, 
-                working on a BA in Japanese with a minor in Digital Art. I worked as a Game Design 
-                Intern at Resonym/Tilt Factor in New Hampshire last summer and am currently developing 
-                my skills with Dartmouth's offerings in digital and game design. Most recently, I 
-                completed an 
-                <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-22" target="_blank">
-                  introductory course
-                </a> 
-                in Maya and I am currently enrolled in a 
-                <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-23-01" target="_blank">
-                  continuation of this course
-                </a> 
-                organized around level design in AR/VR games developed in Unity. 
-              </p>
-              <p>
-                In my free time, I enjoy baking, watching soccer, reading history, traveling, and 
-                playing games (especially Pokemon, Dark Souls, and Minecraft). Game design, 
-                particularly level and content design, is a favorite hobby of mine and one I have 
-                been pursuing since I started running D&D games for my friends and siblings in middle 
-                school. In my work I seek to instill a sense of warmth and wonder while remaining 
-                honest to the topic I want to address. 
-              </p>
-              <p><a href="https://www.linkedin.com/in/alexander-munson/" target="_blank">
+<body>
+  <main>
+
+    <div class="background">
+      <img id="base" src="assets/pixel_art/base.png" alt="Pixel art background with mountains, forest, and river" />
+      <div class="menu-wrapper">
+        <img id="menu" class="scroll" src="assets/pixel_art/scroll.png"
+          alt="Pixel art scroll used for menu background" />
+        <div class="menu-content">
+          <h1 class="menu-title">Alex Munson's Portfolio Website</h1>
+          <p class="menu-directions">Welcome! Use the colored buttons on the map to navigate my work.</p>
+          <a href="assets/resume.pdf" target="_blank">
+            <h2 class="menu-link">RESUME</h2>
+          </a>
+          <a href="https://www.artstation.com/namija" target="_blank">
+            <h2 class="menu-link">ARTSTATION</h2>
+          </a>
+          <h2 id="about-me" class="menu-link">ABOUT ME</h2>
+        </div>
+      </div>
+
+      <div id="green-btn-wrapper" class="btn">
+        <img id="green-btn" class="btn" src="assets/pixel_art/cropped/green-btn.png"
+          alt="Green button for Maya section" />
+        <img id="green-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/green-middle.png"
+          alt="Portion of green button that flashes" />
+        <h2 class="btn-label-left">Unity</h2>
+      </div>
+      <div id="orange-btn-wrapper" class="btn">
+        <img id="orange-btn" class="btn" src="assets/pixel_art/cropped/orange-btn.png"
+          alt="Orange button for Maya section" />
+        <img id="orange-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/orange-middle.png"
+          alt="Portion of orange button that flashes" />
+        <h2 class="btn-label-left">Maya</h2>
+      </div>
+      <div id="brown-btn-wrapper" class="btn">
+        <img id="brown-btn" class="btn" src="assets/pixel_art/cropped/brown-btn.png"
+          alt="Brown button for Maya section" />
+        <img id="brown-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/brown-middle.png"
+          alt="Portion of brown button that flashes" />
+        <h2 class="btn-label-top">WorldMachine/<br />Bannerlord</h2>
+      </div>
+      <div id="purple-btn-wrapper" class="btn">
+        <img id="purple-btn" class="btn" src="assets/pixel_art/cropped/purple-btn.png"
+          alt="Purple button for Maya section" />
+        <img id="purple-base-btn" class="btn base-btn" src="assets/pixel_art/cropped/purple-middle.png"
+          alt="Portion of purple button that flashes" />
+        <h2 class="btn-label-bottom">RPGMaker MV</h2>
+      </div>
+
+      <div id="about-modal" class="modal">
+        <div class="modal-wrapper">
+          <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png"
+            alt="Pixel art scroll for model background" />
+          <span class="close">&times;</span>
+          <div class="shadow"></div>
+          <div class="modal-content">
+            <h1>About Me</h1>
+            <img class="modal-img" src="assets/media/id.JPEG" alt="Photograph of Alexander Munson" />
+            <p>
+              I'm a California native and a student in the class of 2024 at Dartmouth College, working on a BA in Japanese with a minor in Digital Art. I worked as a Game Design Intern at Resonym/Tilt Factor in New Hampshire last summer and am currently developing my skills with Dartmouth's offerings in digital and game design. Most recently, I completed an
+              <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-22"
+                target="_blank">
+                introductory course
+              </a>
+              in Maya and I am currently enrolled in a
+              <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-23-01"
+                target="_blank">
+                continuation of this course
+              </a>
+              organized around level design in AR/VR games developed in Unity.
+            </p>
+            <p>
+              In my free time, I enjoy baking, watching soccer, reading history, traveling, and playing games (especially Pokemon, Dark Souls, and Minecraft). Game design, particularly level and content design, is a favorite hobby of mine and one I have been pursuing since I started running D&D games for my friends and siblings in middle school. In my work I seek to instill a sense of warmth and wonder while remaining honest to the topic I want to address.
+            </p>
+            <p><a href="https://www.linkedin.com/in/alexander-munson/" target="_blank">
                 Connect with me on LinkedIn!
               </a></p>
-            </div>
           </div>
         </div>
+      </div>
 
-        <div id="unity-modal" class="modal">
-          <div class="modal-wrapper">
-            <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png" alt="Pixel art scroll for model background" />
-            <span class="close">&times;</span>
-            <div class="shadow"></div>
-            <div class="modal-content">
-              <h1>Unity</h1>
-              <div id="slideshow-unity" class="slideshow-container">
-                <div class="slide-unity fade">
-                  <div class="slide-count">1 / 3</div>
-                  <img class="slide-img" src="assets/media/unity/doubloonTD.png" alt="Doubloon Tower Defense Unity game screenshot of terrain" >
-                  <div class="caption">Doubloon Tower Defense</div>
-                </div>
-                <div class="slide-unity fade">
-                  <div class="slide-count">2 / 3</div>
-                  <img class="slide-img" src="assets/media/unity/airshipTerrain.png" alt="Airship Explorer VR Game screenshot of terrain" >
-                  <div class="caption">Airship Explorer Terrain</div>
-                </div>
-                <div class="slide-unity fade">
-                  <div class="slide-count">3 / 3</div>
-                  <img class="slide-img" src="assets/media/unity/airshipCockpit.png" alt="Airship Explorer VR Game screenshot from cockpit" >
-                  <div class="caption">Airship Explorer Cockpit</div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 'unity')" tabindex="0">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'unity')" tabindex="0">&#10095;</a>
-              </div>
-              <div class="slideshow-dots">
-                <span class="dot-unity" onclick="currentSlide(1, 'unity')" tabindex="0"></span>
-                <span class="dot-unity" onclick="currentSlide(2, 'unity')" tabindex="0"></span>
-                <span class="dot-unity" onclick="currentSlide(3, 'unity')" tabindex="0"></span>
-              </div>
-              <p>
-                During my time at Dartmouth, I have been able to work on a number of talented and 
-                driven teams making games in Unity. I have been especially fortunate to also work 
-                on projects that use Unity for AR and VR game design. For both projects below, I 
-                modeled everything from scratch in Maya, created texture Atlases, applied 
-                shadergraphs and light baking, and optimized for Unity. Feel free to peruse my 
-                <a href="https://www.artstation.com/namija" target="_blank">ArtStation</a> to 
-                view my models and assets.
-              </p>
-              <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/f3cLx2CFsDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <p>
-                Doubloons Tower Defense is a 2-person project for which I designed and modeled 
-                all assets. I created models and animations in Maya,  sketched and created the 
-                level layout, designed UI and assets, and collaborated with a developer on game 
-                mechanics. The developer then implemented all functionality. I am particularly 
-                proud of its ability to convey warmth and atmosphere via lighting and scenery.
-              </p>
-              <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/wJoANDYW6fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <p>
-                Airship Explorer is a VR game for the Oculus Quest 2. Working with the same developer 
-                on a team of 2, in less than 3 weeks we conceptualized, designed, and executed a 
-                functional and immersive VR experience that was demonstrated live at Dartmouth's 
-                Winter Technigala showcase. I made all models, being conscious to keep interactive 
-                components separate and properly parented for ease of implementation. This game uses 
-                terrain generated by me in WorldMachine, which has been exported and optimized for VR. 
-              </p>
-              <img class="modal-img" src="assets/media/unity/airshipFullTerrain" alt="Screenshot of Airship Explorer's terrain in Unity editor" style="min-width: 100%; margin-top: 2rem" />
-              <img class="modal-img" src="assets/media/unity/airship.png" alt="Screenshot of the airship from Airship Explorer" style="min-width: 100%; margin-top: 1rem" />
+      <div id="unity-modal" class="modal">
+        <div class="modal-wrapper">
+          <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png"
+            alt="Pixel art scroll for model background" />
+          <span class="close">&times;</span>
+          <div class="shadow"></div>
+          <div class="modal-content">
+            <h1>Unity</h1>
+            <img class="modal-img" src="assets/media/unity/madKing.png"
+              alt="Screenshot of Mad King's Descent title screen" style="min-width: 100%; margin-top: 2rem" />
+            <p>
+              During my time at Dartmouth I have worked on a number of Unity projects, most involving AR/VR functionality. For "Mad King's Descent", the project shown below, I worked on a team of 4 as lead artist and project creator. A full play-through video is available on my ArtStation.
+            </p>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3p6XdLLGjgc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             </div>
-          </div>
-        </div>
-    
-        <div id="maya-modal" class="modal">
-          <div class="modal-wrapper">
-            <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png" alt="Pixel art scroll for model background" />
-            <span class="close">&times;</span>
-            <div class="shadow"></div>
-            <div class="modal-content">
-              <h1>MAYA</h1>
-              <div id="slideshow-maya" class="slideshow-container">
-                <div class="slide-maya fade">
-                  <div class="slide-count">1 / 5</div>
-                  <img class="slide-img" src="assets/media/maya/slide5.png" alt="3D render of donut shop" >
-                  <div class="caption">Donut Dreams</div>
-                </div>
-                <div class="slide-maya fade">
-                  <div class="slide-count">2 / 5</div>
-                  <img class="slide-img" src="assets/media/maya/slide1.png" alt="Model of 3D biped for rigging" >
-                  <div class="caption">Biped Modeling</div>
-                </div>
-                <div class="slide-maya fade">
-                  <div class="slide-count">3 / 5</div>
-                  <img class="slide-img" src="assets/media/maya/slide4.png" alt="Screenshot of 3D rendered donut" >
-                  <div class="caption">Donut Modeling made with MASH</div>
-                </div>
-                <div class="slide-maya fade">
-                  <div class="slide-count">4 / 5</div>
-                  <img class="slide-img" src="assets/media/maya/slide6.png" alt="Rendered and Modelled Room in Maya (1)" >
-                  <div class="caption">Room Interior Geometry 1</div>
-                </div>
-                <div class="slide-maya fade">
-                  <div class="slide-count">5 / 5</div>
-                  <img class="slide-img" src="assets/media/maya/slide7.png" alt="Rendered and Modelled Room in Maya (2)" >
-                  <div class="caption">Room Interior Geometry 2</div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 'maya')" tabindex="0">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'maya')" tabindex="0">&#10095;</a>
+            <p>
+              "Mad King's Descent" is a Gothic horror VR game in which the player takes on the role of a king who enters into a pact with dark powers beyond his comprehension. In terms of setting and gameplay, this story was meant to pay homage to classic RPG horror games of the early 2010s.
+            </p>
+            <p>
+              As lead artist, I modeled, textured, and integrated lighting for everything shown below. I also did texturing and lighting for many assets modeled by the other artist on my team. I set deadlines for the team, defined the artistic direction of the game, helped with all aspects of the asset production pipeline, and managed production tasks such as sourcing audio, finding a voice actor, and managing equipment for our live demo at Dartmouth's Spring 2023 Technigala. All textures used were sourced from free online resources or hand illustrated by another artist on the team.
+            </p>
+            <div id="slideshow-unity" class="slideshow-container">
+              <div class="slide-unity fade">
+                <div class="slide-count">1 / 5</div>
+                <img class="slide-img" src="assets/media/unity/mk1.png" alt="Mad King VR game screenshot of terrain">
+                <div class="caption">Mad King Terrain 1</div>
               </div>
-              <div class="slideshow-dots">
-                <span class="dot-maya" onclick="currentSlide(1, 'maya')" tabindex="0"></span>
-                <span class="dot-maya" onclick="currentSlide(2, 'maya')" tabindex="0"></span>
-                <span class="dot-maya" onclick="currentSlide(3, 'maya')" tabindex="0"></span>
-                <span class="dot-maya" onclick="currentSlide(4, 'maya')" tabindex="0"></span>
-                <span class="dot-maya" onclick="currentSlide(5, 'maya')" tabindex="0"></span>
+              <div class="slide-unity fade">
+                <div class="slide-count">2 / 5</div>
+                <img class="slide-img" src="assets/media/unity/mk2.png" alt="Mad King VR game screenshot of terrain">
+                <div class="caption">Mad King Terrain 2</div>
               </div>
-              <p>
-                In Fall 2022, I completed a course in introductory 3D-modeling at Dartmouth College. 
-                This course covered hard surface as well as basic organic modeling, Adobe Substance 
-                Painter, lighting, rendering, and animation. For each of these projects I worked 
-                from concept images through multiple re-renders. All modeling, lighting, and UV 
-                mapping was performed by me.
-              </p>
-              <img class="modal-img mb left-align" src="assets/media/maya/room1.png" alt="Rendered and modelled room in Maya (1)" />
-              <img class="modal-img mb right-align" src="assets/media/maya/room2.png" alt="Rendered and modelled room in Maya (2)" />
-              <img class="modal-img left-align" src="assets/media/maya/room3.png" alt="Rendered and modelled room in Maya (3)" />
-              <p>
-                Three Shots of a Room Interior. Modeled, lit, and textured to create a warm, nostalgic feeling. 
-              </p>
-              <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/yufCNc_kdr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="slide-unity fade">
+                <div class="slide-count">3 / 5</div>
+                <img class="slide-img" src="assets/media/unity/mk3.png" alt="Mad King VR game screenshot of terrain">
+                <div class="caption">Mad King Terrain 3</div>
               </div>
-              <p>
-                Brief animation of a fully rigged biped, shot and textured entirely in Maya.
-              </p>
+              <div class="slide-unity fade">
+                <div class="slide-count">4 / 5</div>
+                <img class="slide-img" src="assets/media/unity/mk4.png" alt="Mad King VR game screenshot of terrain">
+                <div class="caption">Mad King Terrain 4</div>
+              </div>
+              <div class="slide-unity fade">
+                <div class="slide-count">5 / 5</div>
+                <img class="slide-img" src="assets/media/unity/mk5.png" alt="Mad King VR game screenshot of terrain">
+                <div class="caption">Mad King Terrain 5</div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 'unity')" tabindex="0">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'unity')" tabindex="0">&#10095;</a>
             </div>
-          </div>
-        </div>
-    
-        <div id="bannerlord-modal" class="modal">
-          <div class="modal-wrapper">
-            <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png" alt="Pixel art scroll for model background" />
-            <span class="close">&times;</span>
-            <div class="shadow"></div>
-            <div class="modal-content">
-              <h1>WorldMachine Terrain in Mount and Blade II: Bannerlord</h1>
-              <img class="modal-img" src="assets/media/bannerlord/bl_base.png" alt="Bannerlord terrain" />
-              <p>
-                Mount and Blade: Warband is one of my most played games on Steam, 
-                and much of this playtime is thanks to the wonderful work of the 
-                modding community. When Mount and Blade II: Bannerlord came out in 
-                early access, I realized it would be a good opportunity to develop 
-                my own skills as a scene designer. I taught myself the node-based 
-                terrain generation software WorldMachine, which I used to design a 
-                map with an emphasis on natural realism and a balance between open 
-                and tight spaces in which battles could take place.
-              </p>
-              <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/VfYqvMYwBGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <p style="margin-top: 3vh">
-                For my River Valley map, I used reference images of Malibu Creek 
-                State Park by my home in California and drew out the simple geometry 
-                of the mountains and river using shape nodes. I applied perlin and 
-                voronoi noises to these features to create rough surfaces before 
-                applying a ground level and river course. I then used multiple layers 
-                of erosion to carve out the river banks and create natural looking 
-                slopes for the mountains and valley. 
-              </p>
-              <img class="modal-img" src="assets/media/bannerlord/bl_nodes.png" alt="Bannerlord heightmap" />
-              <p>
-                I exported heightmap layers that I used to generate terrain in the 
-                Bannerlord Level Editor, where I used more heightmaps to paint 
-                terrain efficiently and quickly. I then went through the map and 
-                painted foliage by hand while incorporating structures, smoothing 
-                terrain, and building an immersive map boundary. Finally, I painted 
-                a Navigation Mesh for the CPU soldiers to follow, playing close 
-                attention to the two river crossings that I knew would be key 
-                features of players' tactics.
-              </p>
-              <br />
-              <div id="slideshow-bl" class="slideshow-container">
-                <div class="slide-bl fade">
-                  <div class="slide-count">1 / 4</div>
-                  <img class="slide-img" src="assets/media/bannerlord/bl_slide1.png" alt="Bannerlord fall seasonal map" >
-                  <div class="caption">Seasonal Map Variety - Fall</div>
-                </div>
-                <div class="slide-bl fade">
-                  <div class="slide-count">2 / 4</div>
-                  <img class="slide-img" src="assets/media/bannerlord/bl_slide2.png" alt="Bannerlord winter seasonal map" >
-                  <div class="caption">Seasonal Map Variety - Winter</div>
-                </div>
-                <div class="slide-bl fade">
-                  <div class="slide-count">3 / 4</div>
-                  <img class="slide-img" src="assets/media/bannerlord/bl_slide3.png" alt="Bannerlord spring seasonal map" >
-                  <div class="caption">Seasonal Map Variety - Spring</div>
-                </div>
-                <div class="slide-bl fade">
-                  <div class="slide-count">4 / 4</div>
-                  <img class="slide-img" src="assets/media/bannerlord/bl_slide4.png" alt="Bannerlord summer seasonal map" >
-                  <div class="caption">Seasonal Map Variety - Summer</div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 'bl')" tabindex="0">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'bl')" tabindex="0">&#10095;</a>
-              </div>
-              <div class="slideshow-dots">
-                <span class="dot-bl" onclick="currentSlide(1, 'bl')" tabindex="0"></span>
-                <span class="dot-bl" onclick="currentSlide(2, 'bl')" tabindex="0"></span>
-                <span class="dot-bl" onclick="currentSlide(3, 'bl')" tabindex="0"></span>
-                <span class="dot-bl" onclick="currentSlide(4, 'bl')" tabindex="0"></span>
-              </div>
-              <img class="modal-img right-align mt" src="assets/media/bannerlord/bl_nav.png" alt="Bannerlord navmesh" style="max-width: 90%" />
-              <p class="right-align" style="width: 90%">
-                Navigation Mesh. Sculpted by hand to ensure proper pathing at two river crossings.
-              </p>
-              <img class="modal-img left-align mt" src="assets/media/bannerlord/bl_texture.png" alt="Bannerlord paint layers" style="max-width: 90%" />
-              <p class="left-align" style="width: 90%">
-                An example of paint layers. I selected the surface textures and foliage 
-                type<wbr>/density<wbr>/colony size before applying the texture to a heightmap exported 
-                from WorldMachine, which would paint that texture over select areas of the map. 
-                I then edited by hand to clean up boundaries and fine-tune realism such as by 
-                adding puddles and paths.
-              </p>
+            <div class="slideshow-dots">
+              <span class="dot-unity" onclick="currentSlide(1, 'unity')" tabindex="0"></span>
+              <span class="dot-unity" onclick="currentSlide(2, 'unity')" tabindex="0"></span>
+              <span class="dot-unity" onclick="currentSlide(3, 'unity')" tabindex="0"></span>
+              <span class="dot-unity" onclick="currentSlide(4, 'unity')" tabindex="0"></span>
+              <span class="dot-unity" onclick="currentSlide(5, 'unity')" tabindex="0"></span>
             </div>
-          </div>
-        </div>
-    
-        <div id="rpg-modal" class="modal">
-          <div class="modal-wrapper">
-            <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png" alt="Pixel art scroll for model background" />
-            <span class="close">&times;</span>
-            <div class="shadow"></div>
-            <div class="modal-content">
-              <h1>RPGMakerMV</h1>
-              <img class="modal-img-wide" src="assets/media/rpg/Heike_Porch.png" alt="Screenshot of porch scene from Heike game" />
-              <p>
-                Here are two projects I made using the MV installation of the RPGMaker 
-                franchise. For both projects, I used premade tile assets to build and 
-                layout a world that I designed and populated with NPCs, items, and 
-                functional events.
-              </p>
-              <div id="slideshow-rpg" class="slideshow-container mt">
-                <div class="slide-rpg fade">
-                  <div class="slide-count">1 / 5</div>
-                  <img class="slide-img" src="assets/media/rpg/CB_Corridor.jpg" alt="Screenshot of corridor from Caged Beasts game">
-                </div>
-                <div class="slide-rpg fade">
-                  <div class="slide-count">2 / 5</div>
-                  <img class="slide-img" src="assets/media/rpg/CB_Dialogue.png" alt="Screenshot of dialogue from Caged Beasts game">
-                </div>
-                <div class="slide-rpg fade">
-                  <div class="slide-count">3 / 5</div>
-                  <img class="slide-img" src="assets/media/rpg/CB_Hut.jpg" alt="Screenshot of hut from Caged Beasts game">
-                </div>
-                <div class="slide-rpg fade">
-                  <div class="slide-count">4 / 5</div>
-                  <img class="slide-img" src="assets/media/rpg/CB_Spikes.png" alt="Screenshot of spikes from Caged Beasts game">
-                </div>
-                <div class="slide-rpg fade">
-                  <div class="slide-count">5 / 5</div>
-                  <img class="slide-img" src="assets/media/rpg/CB_Storage.png" alt="Screenshot of storage from Caged Beasts game">
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 'rpg')" tabindex="0">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 'rpg')" tabindex="0">&#10095;</a>
-              </div>
-              <div class="slideshow-dots">
-                <span class="dot-rpg" onclick="currentSlide(1, 'rpg')" tabindex="0"></span>
-                <span class="dot-rpg" onclick="currentSlide(2, 'rpg')" tabindex="0"></span>
-                <span class="dot-rpg" onclick="currentSlide(3, 'rpg')" tabindex="0"></span>
-                <span class="dot-rpg" onclick="currentSlide(4, 'rpg')" tabindex="0"></span>
-                <span class="dot-rpg" onclick="currentSlide(5, 'rpg')" tabindex="0"></span>
-              </div>
-              <p>
-                “<a href="https://namija.itch.io/caged-beasts-browser-version" target="_blank">Caged Beasts</a>” started as an itch.io October RPGMaker Game Jam that I 
-                undertook with a friend and fellow Dartmouth student. We divided the 
-                work between us with my teammate writing the story, me designing the 
-                maps and incorporating everything into RPGMakerMV, and both of us 
-                collaborating on the chase scenes and puzzles. Of the content, I 
-                designed the hedge garden chase scene, the werewolf chase scene, and 
-                the mechanical component puzzle on the first floor. I also sourced 
-                plug-ins, sprites and other assets, chose music and sound effects, 
-                and animated cutscenes according to my teammate's dialogue and blocking. 
-                I have since continued to update/patch the game, including introducing 
-                a browser-playable version.
-              </p>
-              <img class="modal-img-wide mt" src="assets/media/rpg/Heike_RPG_Townmaps.png" alt="Screenshots of towns from Heike game" />
-              <div style="margin-top: 3vh">
-                <div>
-                  <img class="half modal-img" style="float: right;" src="assets/media/rpg/Heike_Dungeon1Map.png" alt="Screenshots of dungeon from Heike game" />
-                </div>
-                <p class="half">
-                  I made “<a href="https://namija.itch.io/a-heike-tale" target="_blank">Heike Tale</a>” 
-                  in RPGMakerMV as my final demo for the 
-                  <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Film-and-Media-Studies/FILM-Film-and-Media-Studies/FILM-51" target="_blank">Game Design Studio</a> 
-                  course I completed in Spring 2022. This RPG was my attempt at 
-                  making an immersive and historically honest portrayal of the Medieval 
-                  Japanese epic Tale of the Heike. The demo contains a single dungeon 
-                  based on a few starting chapters, and showcases puzzles, combat, 
-                  cutscenes, and period architecture and sprites.
-                </p>
-              </div>
+            <p>
+              I also created a number of shaders in Unity, ranging from a sea of fog to the liquid in a bubbling cauldron. This process was self-directed and involved consulting a number of online tutorials from which I could draw my favorite elements.
+            </p>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MBXcN9mzlHA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="fullPage" onclick="minimizeImg()" tabindex="0">
-        <div id="closeBtn" onclick="minimizeImg()" tabindex="0">&times;</div>
+      <div id="maya-modal" class="modal">
+        <div class="modal-wrapper">
+          <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png"
+            alt="Pixel art scroll for model background" />
+          <span class="close">&times;</span>
+          <div class="shadow"></div>
+          <div class="modal-content">
+            <h1>MAYA</h1>
+            <div id="slideshow-maya" class="slideshow-container">
+              <div class="slide-maya fade">
+                <div class="slide-count">1 / 5</div>
+                <img class="slide-img" src="assets/media/maya/slide5.png" alt="3D render of donut shop">
+                <div class="caption">Donut Dreams</div>
+              </div>
+              <div class="slide-maya fade">
+                <div class="slide-count">2 / 5</div>
+                <img class="slide-img" src="assets/media/maya/slide1.png" alt="Model of 3D biped for rigging">
+                <div class="caption">Biped Modeling</div>
+              </div>
+              <div class="slide-maya fade">
+                <div class="slide-count">3 / 5</div>
+                <img class="slide-img" src="assets/media/maya/slide4.png" alt="Screenshot of 3D rendered donut">
+                <div class="caption">Donut Modeling made with MASH</div>
+              </div>
+              <div class="slide-maya fade">
+                <div class="slide-count">4 / 5</div>
+                <img class="slide-img" src="assets/media/maya/slide6.png" alt="Rendered and Modelled Room in Maya (1)">
+                <div class="caption">Room Interior Geometry 1</div>
+              </div>
+              <div class="slide-maya fade">
+                <div class="slide-count">5 / 5</div>
+                <img class="slide-img" src="assets/media/maya/slide7.png" alt="Rendered and Modelled Room in Maya (2)">
+                <div class="caption">Room Interior Geometry 2</div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 'maya')" tabindex="0">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'maya')" tabindex="0">&#10095;</a>
+            </div>
+            <div class="slideshow-dots">
+              <span class="dot-maya" onclick="currentSlide(1, 'maya')" tabindex="0"></span>
+              <span class="dot-maya" onclick="currentSlide(2, 'maya')" tabindex="0"></span>
+              <span class="dot-maya" onclick="currentSlide(3, 'maya')" tabindex="0"></span>
+              <span class="dot-maya" onclick="currentSlide(4, 'maya')" tabindex="0"></span>
+              <span class="dot-maya" onclick="currentSlide(5, 'maya')" tabindex="0"></span>
+            </div>
+            <p>
+              In Fall 2022, I completed a course in introductory 3D-modeling at Dartmouth College. This course covered hard surface as well as basic organic modeling, Adobe Substance Painter, lighting, rendering, and animation. For each of these projects I worked from concept images through multiple re-renders. All modeling, lighting, and UV mapping was performed by me.
+            </p>
+            <img class="modal-img mb left-align" src="assets/media/maya/room1.png"
+              alt="Rendered and modelled room in Maya (1)" />
+            <img class="modal-img mb right-align" src="assets/media/maya/room2.png"
+              alt="Rendered and modelled room in Maya (2)" />
+            <img class="modal-img left-align" src="assets/media/maya/room3.png"
+              alt="Rendered and modelled room in Maya (3)" />
+            <p>
+              Three Shots of a Room Interior. Modeled, lit, and textured to create a warm, nostalgic feeling.
+            </p>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yufCNc_kdr4" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p>
+              Brief animation of a fully rigged biped, shot and textured entirely in Maya.
+            </p>
+          </div>
+        </div>
       </div>
 
-    </main>
-    
-    <script src="assets/scripts.js"></script>
-	</body>
+      <div id="bannerlord-modal" class="modal">
+        <div class="modal-wrapper">
+          <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png"
+            alt="Pixel art scroll for model background" />
+          <span class="close">&times;</span>
+          <div class="shadow"></div>
+          <div class="modal-content">
+            <h1>WorldMachine Terrain in Mount and Blade II: Bannerlord</h1>
+            <img class="modal-img" src="assets/media/bannerlord/bl_base.png" alt="Bannerlord terrain" />
+            <p>
+              Mount and Blade: Warband is one of my most played games on Steam, and much of this playtime is thanks to the wonderful work of the modding community. When Mount and Blade II: Bannerlord came out in early access, I realized it would be a good opportunity to develop my own skills as a scene designer. I taught myself the node-based terrain generation software WorldMachine, which I used to design a map with an emphasis on natural realism and a balance between open and tight spaces in which battles could take place.
+            </p>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/VfYqvMYwBGE" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p style="margin-top: 3vh">
+              For my River Valley map, I used reference images of Malibu Creek State Park by my home in California and drew out the simple geometry of the mountains and river using shape nodes. I applied perlin and voronoi noises to these features to create rough surfaces before applying a ground level and river course. I then used multiple layers of erosion to carve out the river banks and create natural looking slopes for the mountains and valley.
+            </p>
+            <img class="modal-img" src="assets/media/bannerlord/bl_nodes.png" alt="Bannerlord heightmap" />
+            <p>
+              I exported heightmap layers that I used to generate terrain in the Bannerlord Level Editor, where I used more heightmaps to paint terrain efficiently and quickly. I then went through the map and painted foliage by hand while incorporating structures, smoothing terrain, and building an immersive map boundary. Finally, I painted a Navigation Mesh for the CPU soldiers to follow, paying close attention to the two river crossings that I knew would be key features of players' tactics.
+            </p>
+            <br />
+            <div id="slideshow-bl" class="slideshow-container">
+              <div class="slide-bl fade">
+                <div class="slide-count">1 / 4</div>
+                <img class="slide-img" src="assets/media/bannerlord/bl_slide1.png" alt="Bannerlord fall seasonal map">
+                <div class="caption">Seasonal Map Variety - Fall</div>
+              </div>
+              <div class="slide-bl fade">
+                <div class="slide-count">2 / 4</div>
+                <img class="slide-img" src="assets/media/bannerlord/bl_slide2.png" alt="Bannerlord winter seasonal map">
+                <div class="caption">Seasonal Map Variety - Winter</div>
+              </div>
+              <div class="slide-bl fade">
+                <div class="slide-count">3 / 4</div>
+                <img class="slide-img" src="assets/media/bannerlord/bl_slide3.png" alt="Bannerlord spring seasonal map">
+                <div class="caption">Seasonal Map Variety - Spring</div>
+              </div>
+              <div class="slide-bl fade">
+                <div class="slide-count">4 / 4</div>
+                <img class="slide-img" src="assets/media/bannerlord/bl_slide4.png" alt="Bannerlord summer seasonal map">
+                <div class="caption">Seasonal Map Variety - Summer</div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 'bl')" tabindex="0">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'bl')" tabindex="0">&#10095;</a>
+            </div>
+            <div class="slideshow-dots">
+              <span class="dot-bl" onclick="currentSlide(1, 'bl')" tabindex="0"></span>
+              <span class="dot-bl" onclick="currentSlide(2, 'bl')" tabindex="0"></span>
+              <span class="dot-bl" onclick="currentSlide(3, 'bl')" tabindex="0"></span>
+              <span class="dot-bl" onclick="currentSlide(4, 'bl')" tabindex="0"></span>
+            </div>
+            <img class="modal-img right-align mt" src="assets/media/bannerlord/bl_nav.png" alt="Bannerlord navmesh"
+              style="max-width: 90%" />
+            <p class="right-align" style="width: 90%">
+              Navigation Mesh. Sculpted by hand to ensure proper pathing at two river crossings.
+            </p>
+            <img class="modal-img left-align mt" src="assets/media/bannerlord/bl_texture.png"
+              alt="Bannerlord paint layers" style="max-width: 90%" />
+            <p class="left-align" style="width: 90%">
+              An example of paint layers. I selected the surface textures and foliage type<wbr>/density<wbr>/colony size before applying the texture to a heightmap exported from WorldMachine, which would paint that texture over select areas of the map. I then edited by hand to clean up boundaries and fine-tune realism such as by adding puddles and paths.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="rpg-modal" class="modal">
+        <div class="modal-wrapper">
+          <img class="scroll modal-scroll" src="assets/pixel_art/scroll.png"
+            alt="Pixel art scroll for model background" />
+          <span class="close">&times;</span>
+          <div class="shadow"></div>
+          <div class="modal-content">
+            <h1>RPGMakerMV</h1>
+            <img class="modal-img-wide" src="assets/media/rpg/Heike_Porch.png"
+              alt="Screenshot of porch scene from Heike game" />
+            <p>
+              Here are two projects I made using the MV installation of the RPGMaker franchise. For both projects, I used premade tile assets to build and layout a world that I designed and populated with NPCs, items, and functional events.
+            </p>
+            <div id="slideshow-rpg" class="slideshow-container mt">
+              <div class="slide-rpg fade">
+                <div class="slide-count">1 / 5</div>
+                <img class="slide-img" src="assets/media/rpg/CB_Corridor.jpg"
+                  alt="Screenshot of corridor from Caged Beasts game">
+              </div>
+              <div class="slide-rpg fade">
+                <div class="slide-count">2 / 5</div>
+                <img class="slide-img" src="assets/media/rpg/CB_Dialogue.png"
+                  alt="Screenshot of dialogue from Caged Beasts game">
+              </div>
+              <div class="slide-rpg fade">
+                <div class="slide-count">3 / 5</div>
+                <img class="slide-img" src="assets/media/rpg/CB_Hut.jpg" alt="Screenshot of hut from Caged Beasts game">
+              </div>
+              <div class="slide-rpg fade">
+                <div class="slide-count">4 / 5</div>
+                <img class="slide-img" src="assets/media/rpg/CB_Spikes.png"
+                  alt="Screenshot of spikes from Caged Beasts game">
+              </div>
+              <div class="slide-rpg fade">
+                <div class="slide-count">5 / 5</div>
+                <img class="slide-img" src="assets/media/rpg/CB_Storage.png"
+                  alt="Screenshot of storage from Caged Beasts game">
+              </div>
+              <a class="prev" onclick="plusSlides(-1, 'rpg')" tabindex="0">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'rpg')" tabindex="0">&#10095;</a>
+            </div>
+            <div class="slideshow-dots">
+              <span class="dot-rpg" onclick="currentSlide(1, 'rpg')" tabindex="0"></span>
+              <span class="dot-rpg" onclick="currentSlide(2, 'rpg')" tabindex="0"></span>
+              <span class="dot-rpg" onclick="currentSlide(3, 'rpg')" tabindex="0"></span>
+              <span class="dot-rpg" onclick="currentSlide(4, 'rpg')" tabindex="0"></span>
+              <span class="dot-rpg" onclick="currentSlide(5, 'rpg')" tabindex="0"></span>
+            </div>
+            <p>
+              "<a href="https://namija.itch.io/caged-beasts-browser-version" target="_blank">Caged Beasts</a>" started as an itch.io October RPGMaker Game Jam that I undertook with a friend and fellow Dartmouth student. We divided the work between us with my teammate writing the story, me designing the maps and incorporating everything into RPGMakerMV, and both of us collaborating on the chase scenes and puzzles. Of the content, I designed the hedge garden chase scene, the werewolf chase scene, and the mechanical component puzzle on the first floor. I also sourced plug-ins, sprites and other assets, chose music and sound effects, and animated cutscenes according to my teammate's dialogue and blocking. I have since continued to update/patch the game, including introducing a browser-playable version.
+            </p>
+            <img class="modal-img-wide mt" src="assets/media/rpg/Heike_RPG_Townmaps.png"
+              alt="Screenshots of towns from Heike game" />
+            <div style="margin-top: 3vh">
+              <div>
+                <img class="half modal-img" style="float: right;" src="assets/media/rpg/Heike_Dungeon1Map.png"
+                  alt="Screenshots of dungeon from Heike game" />
+              </div>
+              <p class="half">
+                I made "<a href="https://namija.itch.io/a-heike-tale" target="_blank">Heike Tale</a>" in RPGMakerMV as my final demo for the
+                <a href="http://dartmouth.smartcatalogiq.com/current/orc/Departments-Programs-Undergraduate/Film-and-Media-Studies/FILM-Film-and-Media-Studies/FILM-51"
+                  target="_blank">Game Design Studio</a>
+                course I completed in Spring 2022. This RPG was my attempt at making an immersive and historically honest portrayal of the Medieval Japanese epic Tale of the Heike. The demo contains a single dungeon based on a few starting chapters, and showcases puzzles, combat cutscenes, and period architecture and sprites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fullPage" onclick="minimizeImg()" tabindex="0">
+      <div id="closeBtn" onclick="minimizeImg()" tabindex="0">&times;</div>
+    </div>
+
+  </main>
+
+  <script src="assets/scripts.js"></script>
+</body>
+
 </html>
