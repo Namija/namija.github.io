@@ -1,3 +1,10 @@
+:root {
+  --light_red: #9f3458;
+  --dark_red: #801c3d;
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   overflow-x: auto;
@@ -25,22 +32,20 @@ h2 {
 }
 
 a {
-  color: #801c3d !important;
+  color: var(--dark_red) !important;
 }
 
 a:hover {
-  color: #9f3458 !important;
+  color: var(--light_red) !important;
 }
 
 iframe {
   border-radius: 10px;
   width: 100%;
-  /* height: 120%; */
   display: block;
 }
 
 .iframe-container {
-  /* max-height: 30vh; */
   width: 100%;
   display: table-cell;
 }
@@ -74,7 +79,7 @@ iframe {
 }
 
 .background {
-  background-color: #000;
+  background-color: var(--black);
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -144,8 +149,8 @@ iframe {
 .btn-label {
   font-size: 2vh;
   font-weight: 100;
-  color: #fff;
-  text-shadow: #000 4px 4px;
+  color: var(--white);
+  text-shadow: var(--black) 4px 4px;
   position: absolute;
   text-align: center;
 }
@@ -277,11 +282,11 @@ iframe {
 
 #about-me {
   text-decoration: underline;
-  color: #801c3d !important;
+  color: var(--dark_red) !important;
 }
 
 #about-me:hover {
-  color: #9f3458 !important;
+  color: var(--light_red) !important;
   cursor: pointer;
 }
 
@@ -353,7 +358,7 @@ iframe {
   height: 3vh;
   width: 83vh;
   text-align: center;
-  background-color: #000000;
+  background-color: var(--black);
   opacity: 0.3;
   z-index: 9999;
 }
@@ -409,7 +414,7 @@ iframe {
 }
 
 .close {
-  color: #000000;
+  color: var(--black);
   font-size: 6vh;
   font-weight: bold;
   position: absolute;
@@ -561,7 +566,7 @@ iframe {
 #closeBtn {
   display: none;
   position: absolute;
-  color: #fff;
+  color: var(--white);
   padding: 1vh;
   max-width: 10vh;
   text-align: center;
