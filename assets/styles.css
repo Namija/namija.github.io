@@ -98,6 +98,7 @@ iframe {
 
 .btn {
   position: absolute;
+  z-index: 5;
   height: 5.5vh;
   width: 5.5vh;
 }
